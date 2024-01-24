@@ -35,13 +35,82 @@
 </head>
 
 <body class="">
-    <header class="font_manrope container mx-auto px-28 lg:mx-20 mx-5">
+    <header class="font_manrope mt-5 mx-auto lg:mx-32">
         <!-- Navbar section -->
+        <div class="navbar bg-base-100 mb-20 mt-4">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 hover:shadow-sm">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl lg:text-4xl font-extrabold text-center"><span
+                        class="text-theme_color ">AR</span>Club</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-bold lg:text-theme_color">Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+
+                </ul>
+            </div>
+            <!-- button -->
+            <div class="navbar-end ">
+                <a href=""><i class="  fa-solid fa-magnifying-glass mx-3"></i></a>
+                <a class="btn text-xl font-bold bg-theme_color text-white">Get Ticket</a>
+            </div>
+        </div>
 
         <!-- Slider section -->
+        <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="./Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slider 2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./Images/1.png" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
 
+        </div>
+        <!-- Coocky box -->
+        <div class="lg:relative lg:left-[45%] lg:-top-60 card w-au lg:w-[555px] bg-neutral text-neutral-content">
+            <div class="card-body items-center text-center bg-black rounded-2xl">
+                <h2 class="card-title text-2xl text-white font-extrabold text-start">Meet all the heroes from the field
+                </h2>
+                <p class="text-gray-400 text-start">Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis placerat
+                    dolor. Purus urna in
+                    sit nullam proin.</p>
+                <div class="card-actions justify-end">
+
+                </div>
+            </div>
     </header>
     <main class="font_manrope lg:mx-20 mx-5">
+
         <!-- professional hockey club heading -->
         <section class="text-center my-24 mt-24">
             <hr class="border-dashed mb-6">
@@ -107,8 +176,9 @@
                 placerat dolor. Purus urna in sit nullam proin. </p>
 
         </section>
+        <hr class="border-dashed mt-24">
         <!-- program section  -->
-        <section class=" grid col-end-1 gap-5  lg:grid-cols-2 ">
+        <section class=" grid col-end-1 gap-5  lg:grid-cols-2 mt-24">
             <!-- card 1 -->
             <div class="card w-auto shadow-xl image-full">
                 <figure class=""><img class="w-[100%]" src="./Images/2.png" alt="Shoes" />
@@ -188,71 +258,67 @@
                     <div class="collapse collapse-plus bg-base-200 ">
                         <input type="radio" name="my-accordion-3" checked="checked" />
                         <div class="collapse-title text-xl font-bold ">
-                            Click to open this one and close others
+                            Our service time ?
                         </div>
                         <div class="collapse-content text-base">
-                            <p>Lorem, ipsum d?</p>
+                            <p>24 hour open</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus bg-base-200 ">
                         <input type="radio" name="my-accordion-3" checked="checked" />
                         <div class="collapse-title text-xl font-bold ">
-                            Click to open this one and close others
+                            Admission date ?
                         </div>
                         <div class="collapse-content text-base">
-                            <p>Lorem, ipsum d?</p>
+                            <p> 25th January to 2nd March</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus bg-base-200 ">
                         <input type="radio" name="my-accordion-3" checked="checked" />
                         <div class="collapse-title text-xl font-bold ">
-                            Click to open this one and close others
+                            When do the clubs meet?
                         </div>
                         <div class="collapse-content text-base">
-                            <p>Lorem, ipsum d?</p>
+                            <p>As a general rule, student clubs will meet when it is most convenient for the majority of
+                                the club’s members.</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus bg-base-200 ">
                         <input type="radio" name="my-accordion-3" checked="checked" />
                         <div class="collapse-title text-xl font-bold ">
-                            Click to open this one and close others
+                            How can I get more information about getting involved?
                         </div>
                         <div class="collapse-content text-base">
-                            <p>Lorem, ipsum d?</p>
+                            <p>It’s easy – just send us an email at: hockey212@help.com
+
+                                We’re here to help!</p>
                         </div>
                     </div>
                     <div class="collapse collapse-plus bg-base-200 ">
                         <input type="radio" name="my-accordion-3" checked="checked" />
                         <div class="collapse-title text-xl font-bold ">
-                            Click to open this one and close others
+                            Admission form fee ?
                         </div>
                         <div class="collapse-content text-base">
-                            <p>Lorem, ipsum d?</p>
+                            <p>2500 BDT</p>
                         </div>
                     </div>
-                    <div class="collapse collapse-plus bg-base-200 ">
-                        <input type="radio" name="my-accordion-3" checked="checked" />
-                        <div class="collapse-title text-xl font-bold ">
-                            Click to open this one and close others
-                        </div>
-                        <div class="collapse-content text-base">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In commodi ad eaque! Quaerat
-                                porro quasi, officiis dignissimos architecto neque ipsam.?</p>
-                        </div>
-                    </div>
+
 
                 </div>
             </div>
             </div>
         </section>
+        <hr class="border-dashed mt-24">
         <!-- our new product heading  -->
-        <section class="text-center  mt-24">
+        <section class="text-center  mt-20">
             <h2 class=" text-2xl lg:text-5xl font-extrabold mb-5">Our New Products</h2>
             <p class="  max-w-3xl mx-auto mb-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
                 placerat dolor. Purus urna in sit nullam proin. </p>
 
             <hr class="border-dashed mb-24">
         </section>
+        <hr class="border-dashed mt-24">
         <!-- products section -->
         <section class="grid grid-cols-1 gap-6 lg:grid-cols-2">
             <!-- card 1 -->
